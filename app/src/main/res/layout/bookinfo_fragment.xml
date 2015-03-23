@@ -4,78 +4,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/id_bookinfo_container">
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="2.0"
-        android:orientation="horizontal"
-        android:layout_margin="10sp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0">
+        android:layout_weight="2.0">
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/shelf_image_left"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/empty_image"
-            android:id="@+id/id_imageview_bookinfo"
-            android:layout_margin="2dp"/>
-        </LinearLayout>
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bookshelf_layer_left" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2.0"
-            android:orientation="vertical"
-            android:layout_marginLeft="10sp"
-            android:gravity="bottom"
-            >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Brought to you by - "
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/shelf_image_right"
+            android:layout_toRightOf="@+id/shelf_image_left"
+            android:background="@drawable/bookshelf_layer_center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/empty_image"
+                    android:id="@+id/id_imageview_bookinfo"
+                    android:layout_margin="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.0"
+                android:orientation="vertical"
+                android:layout_marginLeft="10sp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brought to you by - "
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Publisher:"
-            android:textStyle="italic"
-            android:layout_margin="1dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Books publisher"
-            android:id="@+id/id_textview_book_publisher"
-            android:layout_margin="1dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Author:"
-            android:textStyle="italic"
-            android:layout_margin="1dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Books author"
-            android:id="@+id/id_textview_book_author"
-            android:layout_margin="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Publisher:"
+                    android:textStyle="italic"
+                    android:layout_margin="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Books publisher"
+                    android:id="@+id/id_textview_book_publisher"
+                    android:layout_margin="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Author:"
+                    android:textStyle="italic"
+                    android:layout_margin="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Books author"
+                    android:id="@+id/id_textview_book_author"
+                    android:layout_margin="1dp"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:layout_margin="0px"/>
+        <ImageView
+            android:id="@+id/shelf_image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bookshelf_layer_right" />
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1.0"
-        android:layout_marginTop="20dp">
+        android:background="@drawable/bookshelf_layer_center">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_gravity="center"
             android:layout_marginLeft="5px">
             <TextView
                 android:layout_width="match_parent"

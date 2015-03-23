@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
         initKeywords();
     }
     private void initKeywords(){
-        TextView androidView = (TextView) findViewById(R.id.id_keyword_text_android);
+        LinearLayout androidView = (LinearLayout) findViewById(R.id.id_keyword_text_android);
         androidView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView iosView = (TextView) findViewById(R.id.id_keyword_text_ios);
+        LinearLayout iosView = (LinearLayout) findViewById(R.id.id_keyword_text_ios);
         iosView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +46,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView javaView = (TextView) findViewById(R.id.id_keyword_text_java);
+        LinearLayout javaView = (LinearLayout) findViewById(R.id.id_keyword_text_java);
         javaView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView pythonView = (TextView) findViewById(R.id.id_keyword_text_python);
+        LinearLayout pythonView = (LinearLayout) findViewById(R.id.id_keyword_text_python);
         pythonView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +62,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView nodeView = (TextView) findViewById(R.id.id_keyword_text_node);
+        LinearLayout nodeView = (LinearLayout) findViewById(R.id.id_keyword_text_node);
         nodeView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +70,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView linuxView = (TextView) findViewById(R.id.id_keyword_text_linux);
+        LinearLayout linuxView = (LinearLayout) findViewById(R.id.id_keyword_text_linux);
         linuxView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +78,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView oracleView = (TextView) findViewById(R.id.id_keyword_text_oracle);
+        LinearLayout oracleView = (LinearLayout) findViewById(R.id.id_keyword_text_oracle);
         oracleView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +86,7 @@ public class MainActivity extends ActionBarActivity {
                 turnOnSearchFragment();
             }
         });
-        TextView hadoopView = (TextView) findViewById(R.id.id_keyword_text_hadoop);
+        LinearLayout hadoopView = (LinearLayout) findViewById(R.id.id_keyword_text_hadoop);
         hadoopView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
