@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10sp"
+    android:padding="20sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="About it-ebooks.info"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it-ebooks.info allows you to search and download IT ebooks FREE.
+This APP allow you to download books from IT-ebooks.info on your mobile phone.
+Completely ads-free."
+        android:textSize="15sp"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="Author:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="bob.sun"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="Contact:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:text="widekuan@outlook.com"
+        android:autoLink="email"
+        android:textSize="15sp"
+        />
+</LinearLayout>
